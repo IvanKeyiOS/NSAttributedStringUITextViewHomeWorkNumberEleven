@@ -26,7 +26,6 @@ class ViewController: UIViewController, UITextViewDelegate {
         if let range = text.range(of: myURLString) {
             let nsRange = NSRange(range, in: text)
             attributedText.addAttribute(.font, value:  UIFont.boldSystemFont(ofSize: 20), range: nsRange)
-            
             attributedText.addAttribute(.link, value: myURLString, range: nsRange)
         }
         
